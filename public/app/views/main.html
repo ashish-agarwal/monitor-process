@@ -1,0 +1,20 @@
+<div>
+  <h1>NodeJS Process</h1>
+  <br>
+  <div>
+
+    <table class="table table-hover">
+      <th>Name</th>
+      <th>Status</th>
+      <th></th>
+      </th>
+      <tr ng-repeat="(key,value) in status">
+        <td>{{key}}</td>
+        <td><span class="badge badge-error" ng-if="!value">DOWN</span>
+          <span class="badge badge-success" ng-if="value">UP</span></td>
+        <td><a class="btn btn-primary btn-sm">RESTART</a></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
