@@ -47,8 +47,10 @@ module.exports = function (io) {
   /* GET home page. */
   router.get('/status', function (req, res, next) {
     return res.send(globalStatus.status)
-    // var sockets = req.app.get('socketio');
-    // sockets.sockets.emit("status", globalStatus);
   });
+
+  router.post('/restart', function (req, res, next) {
+    res.send(req.body);
+  })
   return router
 };

@@ -12,7 +12,7 @@
         <td>{{key}}</td>
         <td><span class="badge badge-error" ng-if="!value">DOWN</span>
           <span class="badge badge-success" ng-if="value">UP</span></td>
-        <td><a class="btn btn-primary btn-sm">RESTART</a></td>
+        <td><a class="btn btn-primary btn-sm" ng-click="restart(key,value)"> RESTART</a></td>
       </tr>
     </table>
   </div>

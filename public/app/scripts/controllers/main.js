@@ -16,10 +16,19 @@ angular.module('publicApp')
     StatusServices.getStatus()
       .then(function (res) {
         $scope.status = res.data;
+      }).catch(function (err) {
+        console.log(err)
+      });
 
-      })
     socket.on("status", function (data) {
       console.log(data);
       $scope.status = data;
-    })
+    });
+
+    $scope.restart = function (name) {
+      StatusServices.restart({ name })
+        .then(function (res) {
+          console.log(res);
+        })
+    }
   }]);
