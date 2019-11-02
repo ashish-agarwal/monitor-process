@@ -14,7 +14,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "lodash": "^4.17.11",
-    "mongoose": "^5.5.12",
+    "mongoose": "^5.7.5",
     "morgan": "~1.9.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
